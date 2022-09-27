@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header{
+    display: flex;
+    background-color: black;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#logo img{
+    height: 60px;
+}
+
+#laforant img{
+    height: 75px;
+    width: 400px;
+}
+
+.dropbtn{
+    background-color: rgba(255, 0, 0, 0.747);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.747);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: black;
+}
+
+#dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#dropdown:hover .dropbtn{
+    background-color: black;
+}
+
+#content{
+    margin-bottom: 30px;
+}
+
+.map-name{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mySlides{
+    display: none
+}
+
+img{
+    vertical-align: middle;
+}
+
+.slideshow-container{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.map-info{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.sosmed img {
+    height: 50px;
+    width: 50px;
+    padding: 10px 20px;
+}
+
+@media(max-width: 700px){
+    #header{
+        display: flex;
+        background-color: black;
+        height: 8vh;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    #logo img{
+        height: 35px;
+    }
+    #laforant img{
+        height: 35px;
+        width: 170px;
+    }
+    .dropbtn{
+        background-color: rgba(255, 0, 0, 0.747);
+        color: white;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 35px;
+        margin-bottom: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-top: 15px;
+    }
+    
+    #dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0.747);
+        width: 100%;
+        font-size: 8px;
+    }
+    
+    .dropdown-content a{
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover{
+        background-color: black;
+    }
+    
+    #dropdown:hover .dropdown-content{
+        display: block;
+    }
+    
+    #dropdown:hover .dropbtn{
+        background-color: black;
+    }
+
+    .map-name{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .map-info{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}

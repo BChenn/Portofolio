@@ -1,0 +1,294 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header{
+    display: flex;
+    background-color: black;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#logo img{
+    height: 60px;
+}
+
+#laforant img{
+    height: 75px;
+    width: 400px;
+}
+
+.dropbtn{
+    background-color: rgba(255, 0, 0, 0.747);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.747);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: black;
+}
+
+#dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#dropdown:hover .dropbtn{
+    background-color: black;
+}
+
+.container{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+    width: 100%;
+}
+
+.intro{
+    background-color: aliceblue;
+    width: 100%;
+    height: 180px;
+    display: absolute;
+}
+
+.web-logo img{
+    border: 10px solid #e6ccff;
+    background-color: black;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 500px;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 40px;
+    width: 90%;
+}
+
+.content-table{
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px black;
+    display: table;
+}
+
+@media screen and (max-width: 500px){
+    .content-table{
+        display: block;
+    }
+}
+
+.row{
+    display: table-row;
+    background: rgb(255, 255, 210);
+}
+
+.row:nth-of-type(odd){
+    background: rgb(203, 255, 203);
+}
+
+.row-header{
+    display: table-row;
+    font-weight: bolder;
+    color: black;
+    background: rgb(183, 229, 255);
+}
+
+.row-header #sr{
+    background: rgb(229, 200, 255);
+}
+
+.row #spec{
+    background: rgb(255, 189, 189);
+}
+
+.row #specs{
+    background: rgb(255, 225, 186);
+}
+
+@media screen and (max-width: 500px){
+    .row{
+        padding: 14px 0 7px;
+    }
+
+    .row-header{
+        padding: 0;
+        height: 6px;
+        display: grid;
+        margin-bottom: 130px;
+    }
+
+    .row .cells{
+        margin-bottom: 10px;
+        content: attr(data-title);
+        min-width: 90px;
+        line-height: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;
+        display: block;
+    }
+
+    .cells{
+        padding-bottom: 30px;
+        display: block;
+    }
+
+    .container{
+        height: 100vh;
+    }
+}
+
+.cells{
+    padding: 6px 12px;
+    display: table-cell;
+}
+
+#footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.sosmed img{
+    padding: 10px 20px;
+    height: 50px;
+    width: 50px;
+}
+
+@media(max-width: 700px){
+    #header{
+        display: flex;
+        background-color: black;
+        height: 8vh;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    #logo img{
+        height: 35px;
+    }
+    #laforant img{
+        height: 35px;
+        width: 170px;
+    }
+    .dropbtn{
+        background-color: rgba(255, 0, 0, 0.747);
+        color: white;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 35px;
+        margin-bottom: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-top: 15px;
+    }
+    
+    #dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0.747);
+        width: 100%;
+        font-size: 8px;
+    }
+    
+    .dropdown-content a{
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover{
+        background-color: black;
+    }
+    
+    #dropdown:hover .dropdown-content{
+        display: block;
+    }
+    
+    #dropdown:hover .dropbtn{
+        background-color: black;
+    }
+
+    .container{
+        height: 120vh;
+        display: block;  
+        justify-content: center;
+        align-items: center;
+        background: aliceblue;
+        width: 80%;
+    }
+    
+    .intro{
+        background-color: aliceblue;
+        width: 100%;
+        height: 100px;
+        display: absolute;
+    }
+    
+    .web-logo img{
+        border: 10px solid #e6ccff;
+        background-color: black;
+        border-radius: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+}

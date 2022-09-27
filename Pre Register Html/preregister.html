@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../Asset/Project (1).png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaForanT</title>
+    <link rel="stylesheet" href="../Pre Register Css/preregister.css">
+</head>
+<body>
+    <div id="header">
+        <div id="logo">
+            <a href="../Home Html/home.html">
+                <img src="../Asset/Project (1).png" alt="">
+            </a>
+        </div>
+        <div id="laforant">
+            <img src="../Asset/lafo.png">
+        </div>
+        <div id="dropdown">
+            <button class="dropbtn">GAME INFO &#9660;</button>
+            <div class="dropdown-content">
+                <a href="../Agents Home html/index.html">
+                    AGENTS
+                </a>
+                <a href="../Maps Home html/map.html">
+                    MAPS  
+                </a>
+                <a href="../System Requirements Html/systemrequirements.html">
+                    SYSTEM REQUIREMENTS
+                </a>
+                <a href="../Pre Register Html/preregister.html">
+                    PRE-REGISTER
+                </a>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container">
+        <form action="#">
+            <div class="title">Pre-Registration</div>
+            <br>
+            <div class="user">
+                <div class="input">
+                    <span class="details">Full Name</span>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="input">
+                    <span class="details">Email</span>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="input">
+                    <span class="details">Username</span>
+                    <input type="username" id="username" name="username" placeholder="Enter your username">
+                </div>
+                <div class="input">
+                    <span class="details">Phone Number [Country Code | Phone Number]</span>
+                    <input type="number" id="phonenumber" name="phonenumber" placeholder="Enter your phone number">
+                </div>
+                <div class="input">
+                    <span class="details">Password</span>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                </div>
+                <div class="input">
+                    <span class="details">Nationality</span>
+                    <input type="text" id="nationality" name="nationality" placeholder="Enter your nationality">
+                </div>
+                <div class="input">
+                    <span class="details">Date Of Birth [Day | Month | Year]</span>
+                    <input type="number" id="day" name="day" placeholder="Enter your day of birth">
+                    <input type="number" id="months" name="months" placeholder="Enter your month of birth [use number]">
+                    <input type="number" id="year" name="year" placeholder="Enter your year of birth">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="agree" name="agree">
+                    <label for="agree">Agree to terms and conditions</label>
+                </div>
+            </div>
+            <br>
+                <button onclick="submitData()">Register</button>
+                <p id="error" style="color: red;"></p>
+                <br>
+        </form>
+    </div>
+    <div id="content">
+        <div id="footer">
+            <div class="sosmed">
+                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../Asset/twitter.png">
+                </a>
+            </div>
+            <div class="sosmed">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../Asset/instagram (1).png">
+                </a>
+            </div>
+            <div class="sosmed">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="../Asset/facebook.png">
+                </a>
+            </div>
+        </div>
+        <script src="../Pre Register Js/preregister.js"></script>
+</body>
+</html>

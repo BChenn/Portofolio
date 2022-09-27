@@ -1,0 +1,528 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#header{
+    display: flex;
+    background-color: black;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-position: center;
+    position: relative;
+}
+
+#logo img{
+    height: 60px;
+}
+
+#laforant img{
+    height: 75px;
+    width: 400px;
+}
+
+.dropbtn{
+    background-color: rgba(255, 0, 0, 0.747);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(255, 0, 0, 0.747);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: black;
+}
+
+#dropdown:hover .dropdown-content{
+    display: block;
+}
+
+#dropdown:hover .dropbtn{
+    background-color: black;
+}
+
+.intro{
+    background-image: url('../Asset/homepage.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+.web-headline{
+    padding-top: 50px;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+.web-information{
+    padding: 15px 0;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.web-release{
+    padding: 15px 0;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+button{
+    margin-top: 15px;
+    background-color: transparent;
+    border: 5px solid white;
+    cursor: pointer;
+    color: white;
+    padding: 20px 30px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+}
+
+.line{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    border-color : black;
+    margin: 20px 0;
+}
+
+.preview-agent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 60px;
+    background-image: url('../Asset/wallpaper\(1\).jpg');
+    transition: 1s;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.preview-map{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 60px;
+    background-image: url('../Asset/1part2.jpeg');
+    transition: 1s;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.agent{
+    margin-left: 30px;
+    width: 60%;
+    float: left;
+}
+
+.map{
+    margin-right: 30px;
+    width: 60%;
+    float: right;
+}
+
+#agent-pic{
+    background-image: url('../Asset/Preview\ 4.png');
+    width: 600px;
+    height: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    transition: 1s;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.preview{
+    width: 40%;
+    margin-top: 60px;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 120px;
+}
+
+.previews{
+    width: 40%;
+    margin-top: 60px;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.choose{
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.chooses{
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.text{
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.texts{
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.click-button{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.click-buttons{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#footer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.sosmed img {
+    padding: 10px 20px;
+    height: 50px;
+    width: 50px;
+}
+
+@media(max-width: 700px){
+    #header{
+        display: flex;
+        background-color: black;
+        height: 8vh;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    #logo img{
+        height: 35px;
+    }
+    #laforant img{
+        height: 35px;
+        width: 170px;
+    }
+    .dropbtn{
+        background-color: rgba(255, 0, 0, 0.747);
+        color: white;
+        font-size: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 35px;
+        margin-bottom: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    #dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0.747);
+        width: 100%;
+        font-size: 8px;
+    }
+    
+    .dropdown-content a{
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover{
+        background-color: black;
+    }
+    
+    #dropdown:hover .dropdown-content{
+        display: block;
+    }
+    
+    #dropdown:hover .dropbtn{
+        background-color: black;
+    }
+
+    .intro{
+        background-image: url('../Asset/homepage.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 230px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        background-position: center;
+    }
+    
+    .intro .web-headline .web-information .web-release{
+        display: inline;
+    }
+
+    .web-headline{
+        padding-top: 10px;
+        font-size: 20px;
+        color: white;
+        text-shadow: 2px 2px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .web-information{
+        font-size: 8px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: lighter;
+    }
+    
+    .web-release{
+        font-size: 12px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: lighter;
+    }
+    
+    button{
+        background-color: transparent;
+        border: 3px solid white;
+        cursor: pointer;
+        color: white;
+        padding: 5px 8px;
+        font-size: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .line{
+        display: block;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 2px;
+        border-color : black;
+    }
+    
+    .preview-agent{
+        display: flow-root;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        background-image: url('../Asset/wallpaper\(1\).jpg');
+        transition: 1s;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+    }
+
+    .preview-map{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-left: 60px;
+        background-image: url('../Asset/1part2.jpeg');
+        transition: 1s;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+    }
+    
+    .agent{
+        margin-left: 30px;
+        width: 60%;
+        float: left;
+        height: 100px;
+    }
+    
+    .map{
+        width: 60%;
+        float: right;
+    }
+    
+    #agent-pic{
+        background-image: url('../Asset/Preview\ 4.png');
+        width: 200px;
+        height: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        transition: 1s;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .preview{
+        width: 40%;
+        margin-top: 60px;
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: 120px;
+    }
+    
+    .previews{
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .choose{
+        display: flex;
+        position: relative;
+        font-size: 15px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    
+    .chooses{
+        display: inline;
+        position: relative;
+        font-size: 15px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        margin-left: 10px;
+    }
+    
+    .text{
+        display: inline;
+        position: absolute;
+        font-size: 7px;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: lighter;
+        text-align: left;
+        margin-right: 7px;
+    }
+    
+    .texts{
+        display: flexbox;
+        font-size: 15px;
+        position: absolute;
+        color: white;
+        text-shadow: 1px 1px black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: lighter;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .click-button{
+        margin-top: 67px;
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        font-size: 5px;
+    }
+    
+    .click-buttons{
+        margin-top: 100px;
+        text-align: center;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
